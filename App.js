@@ -6,15 +6,15 @@ import Constants from 'expo-constants';
 // Exemplos
 import Exemplo1 from './src/exemplos/ex-01'
 import Atividade1 from './src/atividades/atividade-01';
-import Exemplo2
- from './src/exemplos/ex-02';
+import Exemplo2 from './src/exemplos/ex-02';
+import Camiseta from './src/exemplos/card';
 
 // Atividades
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo2 />
+      <Camiseta />
       <StatusBar style="light" />
     </View>
   );
