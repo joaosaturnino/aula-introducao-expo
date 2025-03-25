@@ -8,13 +8,14 @@ import Exemplo1 from './src/exemplos/ex-01'
 import Atividade1 from './src/atividades/atividade-01';
 import Exemplo2 from './src/exemplos/ex-02';
 import Camiseta from './src/exemplos/card';
+import Atividade2 from './src/atividades/atividade-02/index';
 
 // Atividades
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Camiseta />
+      <Atividade2 />
       <StatusBar style="light" />
     </View>
   );

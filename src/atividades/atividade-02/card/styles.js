@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     imagem: {
         height: RFPercentage(10),
         width: RFPercentage(28),
-        width: '80%',
+
         resizeMode: 'center',
     },
 

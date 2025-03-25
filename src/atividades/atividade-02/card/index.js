@@ -2,15 +2,15 @@ import { View, Text, Image } from 'react-native';
 
 import styles from './styles';
 
-function Mensagem (props) {
+function Card (props) {
     return(
         <View style={styles.container}>
                 <Text style={styles.titulo}>{props.titulo}</Text>
                 <Text style={styles.texto}>{props.mensagem}</Text>
-                <Image style={styles.imagem}>{props.imagem}</Image>
+                <Image source={props.camiseta} style={styles.imagem}></Image>
 
         </View>
     );
 }
 
-export default Mensagem;
+export default Card;
