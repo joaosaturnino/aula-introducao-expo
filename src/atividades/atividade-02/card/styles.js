@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'deepskyblue',
         borderWidth: RFPercentage(0.6),
         width: '90%',
-        height: '20%',
+        height: '30%',
         padding: 8,
         alignItems: 'center',
         borderRadius: 20,

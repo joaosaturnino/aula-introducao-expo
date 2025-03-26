@@ -24,15 +24,6 @@ const styles = StyleSheet.create({
         textAlignVertical: 'center',
 
     },
-    imagem: {
-        height: RFPercentage(10),
-        width: RFPercentage(28),
-        width: '80%',
-        resizeMode: 'center',
-    },
-
-
-
 });
 
 export default styles;

@@ -1,8 +1,6 @@
 import { View, Text, Image} from 'react-native';
 
 import styles from './styles';
-
-import img from '../../../assets/002-1-react-native.png';
 import img1 from '../../../assets/imagem1.jpg';
 import img2 from '../../../assets/imagem2.png';
 import img3 from '../../../assets/imagem3.png';
@@ -13,8 +11,6 @@ function Atividade2 () {
     return(
         <View style={styles.container}>
                 <Text style={styles.titulo}>Atividade 2</Text>
-                <Image source={img} style={styles.imagem} />
-
                 <Card
                 camiseta={img1}
                 titulo={'Camiseta Tradicional Malwee Masculino'}
