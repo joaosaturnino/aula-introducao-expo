@@ -2,13 +2,17 @@ import { View, Text, Image } from 'react-native';
 
 import styles from './styles';
 
-function Card (props) {
+function Card ({ titulo, children, img, valor}) {
     return(
         <View style={styles.container}>
-                <Text style={styles.titulo}>{props.titulo}</Text>
-                <Text style={styles.texto}>{props.mensagem}</Text>
-                <Image source={props.camiseta} style={styles.imagem}></Image>
-
+            <View>
+                <Image source={img} style={styles.imagem} />
+            </View>
+            <View style={styles.containerTxt}>
+                <Text style={styles.titulo}>{titulo}</Text>
+                <Text style={styles.texto}>{children}</Text>
+                <Text style={styles.titulo}>{`R$ ${valor}`}</Text>
+            </View>
         </View>
     );
 }
