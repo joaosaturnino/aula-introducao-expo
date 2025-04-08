@@ -10,13 +10,14 @@ import Exemplo2 from './src/exemplos/ex-02';
 import Camiseta from './src/exemplos/card';
 import Atividade2 from './src/atividades/atividade-02/index';
 import Exemplo3 from './src/exemplos/ex-03';
+import Atividade3 from './src/atividades/atividade-03';
 
 // Atividades
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo3 />
+      <Atividade3 />
       <StatusBar style="light" />
     </View>
   );
