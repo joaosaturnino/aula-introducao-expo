@@ -62,11 +62,10 @@ function Exemplo5() {
         value={resultado.toString()}
         KeyboardType='numeric'/>
 
-<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-  <TouchableOpacity style={styles.botao}
-    onPress={() => multiplicar()}>
-    <Text style={styles.txtBotao}>Multiplicar</Text>
-  </TouchableOpacity>
+
+      <TouchableOpacity style={styles.botao} onPress={() => calcular()}>
+        <Text style={styles.txtBotao}>+</Text>
+      </TouchableOpacity>
 
       <TouchableOpacity style={styles.botao} onPress={() => deletar()}>
         <Text style={styles.txtBotao}>-</Text>
@@ -80,14 +79,14 @@ function Exemplo5() {
         <Text style={styles.txtBotao}>/</Text>
       </TouchableOpacity>
 
-      {/* <TouchableOpacity style={styles.botao}
+      <TouchableOpacity style={styles.botao}
   onPress={() => {
     setN1(''); // Zera o primeiro número
     setN2(''); // Zera o segundo número
     setResultado(''); // Zera o resultado
   }}>
   <Text style={styles.txtBotao}>Zerar</Text>
-</TouchableOpacity> */}
+</TouchableOpacity>
 
 
 
