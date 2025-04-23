@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 import Constants from 'expo-constants';
 
@@ -19,14 +19,7 @@ import Exemplo5 from './src/exemplos/ex-05';
 // Atividades
 
 export default function App() {
-  const [num1, setNum1] = useState(0);
-  const [num2, setNum2] = useState(0);
-  const [total, setTotal] = useState(0);
 
-  function Soma() {
-    const conta = parseInt(num1) + parseInt(num2);
-    setTotal(conta.toString());
-  }
   return (
     <View style={styles.container}>
       <Exemplo5/>

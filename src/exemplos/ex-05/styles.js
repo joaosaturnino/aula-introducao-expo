@@ -1,55 +1,66 @@
-import { StyleSheet } from "react-native";
-import { RFPercentage } from 'react-native-responsive-fontsize'
+import { StyleSheet } from "react-native"; // Importando o pacote StyleSheet do react-native
+import { RFPercentage } from "react-native-responsive-fontsize";
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
     backgroundColor: '#FF80AB',
     padding: 8,
+    flex: 1,
+    justifyContent: 'center',
+
   },
-  paragraph: {
-      margin: 6,
-      fontSize: 18,
-      fontWeight: 'bold',
-      textAlign: 'center',
-      color: '#C51162',
-  },
-  txtSaida: {
+  titulo: {
     margin: 6,
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: '#E91E63',
+    color: '#C51162',
+  },
+  texto: {
+    fontSize: RFPercentage(2.2),
+    color: 'deepskyblue',
   },
   txtEntrada: {
     borderWidth: 4,
     textAlign: 'center',
     fontSize: 22,
     borderColor: '#E91E63',
-    height: 40,
-    color: '#E53935',
+    height: 60,
+    color: '#E91E63',
     borderRadius: 10,
     marginTop: 10,
   },
-  button: {
-    backgroundColor: '#E91E63',
-    height: 40,
-    justifyContent: 'center',
-    borderRadius: 10,
-    marginTop: 20,
+
+
+  txtsaida: {
+    margin: 6,
+    fontSize: 22,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#E91E63',
   },
-  textButton: {
+
+  txtBotao: {
     fontSize: 22,
     color: '#FF80AB',
     textAlign: 'center',
   },
-  textLabel: {
+
+  txtLabel: {
     fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
     color: '#C51162',
+    fontWeight: 'bold',
+  },
+
+  botao: {
+    backgroundColor: '#E91E63',
+    height: 40,
+    color: '#E91E63',
+    borderRadius: 10,
+    marginTop: 10,
+
   },
 });
 
-export default styles;
+
+export default styles; // Exportando o objeto styles
