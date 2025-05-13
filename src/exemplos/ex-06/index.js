@@ -18,24 +18,6 @@ export default function Exemplo6() {
         setImc(tmpImc);
     }
 
-    function mensagemImc(imc) {
-        if (imc < 18.5) {
-            return 'Abaixo do peso';
-        } else if (imc >= 18.5 && imc < 24.9) {
-            return 'Peso normal';
-        } else if (imc >= 25 && imc < 29.9) {
-            return 'Sobrepeso';
-        } else if (imc >= 30 && imc < 34.9) {
-            return 'Obesidade Grau I';
-        } else if (imc >= 35 && imc < 39.9) {
-            return 'Obesidade Grau II';
-        } else if (imc >= 40) {
-            return 'Obesidade Grau III';
-        } else {
-            return 'Valores inseridos de forma incorreta!';
-        }
-    }
-
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 6</Text>
@@ -44,13 +26,11 @@ export default function Exemplo6() {
                 <Input placeholder='Altura' valor={altura} atualizaValor={setAltura} />
             </View>
 
-
-
-            <Botao calcular={calculaImc}>Calcular</Botao>
-
             <Text style={styles.imc}>{isNaN(imc) ? mensErro : imc.toFixed(2)}</Text>
 
-            <Text style={[styles.imc, styles.txtMensagem]}>{mensagemImc(imc)}</Text>
+            <Text style={[styles.imc, styles.txtMensagem]}>Mensagem</Text>
+
+            <Botao calcular={calculaImc}>Calcular</Botao>
         </View>
     )
 }

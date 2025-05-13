@@ -3,14 +3,14 @@ import { RFValue } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     botao: {
-        backgroundColor: '#89ffa5',
+        backgroundColor: '#6dc4a4',
         width: '95%',
         borderRadius: RFValue(20),
     },
     txtBotao: {
-        padding: RFValue(20),
+        padding: RFValue(25),
         fontSize: RFValue(22),
-        color: '#6dc4a4',
+        color: 'black',
         fontWeight: 'bold',
         textAlign: 'center',
     },
