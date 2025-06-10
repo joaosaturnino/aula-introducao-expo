@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 
 // Exemplos
+import Exemplos from './src/exemplos/index.js';
 import Exemplo1 from './src/exemplos/ex-01'
 import Atividade1 from './src/atividades/atividade-01';
 import Exemplo2 from './src/exemplos/ex-02';
@@ -25,7 +26,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Exemplo8/>
+      <Exemplos/>
       <StatusBar style="light" />
     </View>
   );
@@ -34,7 +35,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#fff',
     // alignItems: 'center',
     // justifyContent: 'center',
     padding: 8,
